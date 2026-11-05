@@ -1752,3 +1752,210 @@
         width: 190px;
     }
 }
+
+/* =====================================
+   MOBILE DEMO POPUP - FINAL FIX
+===================================== */
+
+@media (max-width: 480px) {
+
+    /* Background overlay */
+    .modal,
+    .popup {
+        position: fixed;
+        inset: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    /* Popup card */
+    .modal-content,
+    .popup-content {
+        width: 85%;
+        max-width: 360px;
+        height: auto;
+        max-height: 78vh;
+        margin: auto;
+        padding: 0;
+        overflow-x: hidden;
+        overflow-y: auto;
+        border-radius: 18px;
+        box-sizing: border-box;
+    }
+
+    /* Banner image - show complete image */
+    .modal-content img,
+    .popup-content img {
+        display: block;
+        width: 100%;
+        height: auto;
+        max-height: none;
+        object-fit: contain;
+        object-position: center;
+    }
+
+    /* Form spacing */
+    .modal-content input,
+    .modal-content select,
+    .popup-content input,
+    .popup-content select {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+
+
+/* =====================================
+   DEMO POPUP - RESPONSIVE DESIGN
+===================================== */
+
+/* Overlay */
+.demo-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.75);
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+/* Popup */
+.demo-popup {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    max-height: 88vh;
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+/* Banner */
+.demo-banner {
+    width: 100%;
+    flex-shrink: 0;
+    overflow: hidden;
+    background: #ffffff;
+}
+
+.demo-banner img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: none;
+    object-fit: contain;
+    object-position: center;
+}
+
+/* Popup body */
+.demo-body {
+    padding: 25px;
+    overflow-y: auto;
+    min-height: 0;
+    box-sizing: border-box;
+}
+
+/* Close button */
+.demo-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 10;
+}
+
+/* =====================================
+   TABLET
+===================================== */
+
+@media (max-width: 768px) {
+    .demo-popup {
+        width: 90%;
+        max-width: 480px;
+        max-height: 85vh;
+    }
+
+    .demo-body {
+        padding: 20px;
+    }
+}
+
+/* =====================================
+   MOBILE
+===================================== */
+
+@media (max-width: 480px) {
+
+    .demo-overlay {
+        padding: 16px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .demo-popup {
+        width: 88%;
+        max-width: 360px;
+        max-height: 78dvh;
+        margin: auto;
+        border-radius: 16px;
+    }
+
+    /* Show the COMPLETE banner */
+    .demo-banner {
+        width: 100%;
+        height: auto;
+        flex-shrink: 0;
+    }
+
+    .demo-banner img {
+        width: 100%;
+        height: auto;
+        max-height: none;
+        object-fit: contain;
+    }
+
+    /* Scroll form inside popup */
+    .demo-body {
+        padding: 16px;
+        overflow-y: auto;
+    }
+
+    .demo-body h2 {
+        font-size: 20px;
+        line-height: 1.35;
+    }
+
+    .demo-subtitle {
+        font-size: 14px;
+    }
+
+    .demo-form input,
+    .demo-form select {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .demo-benefits {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .demo-close {
+        top: 10px;
+        right: 10px;
+    }
+}
+
+
+
