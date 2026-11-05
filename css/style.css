@@ -1959,3 +1959,22 @@
 
 
 
+/* DEMO POPUP VISIBILITY */
+
+.demo-overlay {
+    display: none;
+}
+
+.demo-overlay.show {
+    display: flex;
+}
+
+/* Keep close button clickable */
+.demo-close {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    z-index: 10001;
+    cursor: pointer;
+    pointer-events: auto;
+}
