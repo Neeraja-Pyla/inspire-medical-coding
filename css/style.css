@@ -1561,3 +1561,194 @@
         transition: none;
     }
 }
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.logo img {
+    display: block;
+    width: 250px;
+    height: auto;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.footer .logo img {
+    width: 220px;
+}
+
+@media (max-width: 850px) {
+    .logo img {
+        width: 210px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo img {
+        width: 175px;
+    }
+}
+
+
+/* =================================
+   INSPIRE OFFICIAL BRAND LOGO
+================================= */
+
+.nav .logo img {
+    display: block;
+    width: 250px;
+    height: auto;
+    object-fit: contain;
+}
+
+.footer-logo img {
+    display: block;
+    width: 220px;
+    height: auto;
+    object-fit: contain;
+}
+
+@media (max-width: 850px) {
+    .nav .logo img {
+        width: 210px;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav .logo img {
+        width: 175px;
+    }
+
+    .footer-logo img {
+        width: 190px;
+    }
+}
+
+/* =====================================
+   ABOUT SECTION - RESPONSIVE IMAGE CARD
+===================================== */
+
+.split {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    align-items: center;
+    gap: 45px;
+}
+
+/* Image card */
+
+.art {
+    width: 100%;
+    min-width: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background: #ffffff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 8px 30px rgba(0, 35, 80, 0.10);
+}
+
+/* Complete image visibility */
+
+.about-institute-image {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    max-height: 450px;
+    object-fit: contain;
+    object-position: center;
+    border-radius: 12px;
+}
+
+/* Tablet */
+
+@media (max-width: 900px) {
+    .split {
+        gap: 25px;
+    }
+
+    .about-institute-image {
+        max-height: 380px;
+    }
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+    .split {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .art {
+        width: 100%;
+        padding: 10px;
+        border-radius: 16px;
+    }
+
+    .about-institute-image {
+        width: 100%;
+        height: auto;
+        max-height: none;
+        object-fit: contain;
+    }
+}
+
+
+
+/* ==============================
+   FOOTER LOGO DESIGN
+============================== */
+
+.footer-logo {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: fit-content;
+    max-width: 100%;
+
+    padding: 12px 18px;
+    background: #ffffff;
+
+    border-radius: 14px;
+    text-decoration: none;
+
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.12);
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.footer-logo img {
+    display: block;
+    width: 220px;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.footer-logo:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.18);
+}
+
+/* Footer logo on mobile */
+
+@media (max-width: 768px) {
+    .footer-logo {
+        padding: 10px 14px;
+        border-radius: 12px;
+    }
+
+    .footer-logo img {
+        width: 190px;
+    }
+}
